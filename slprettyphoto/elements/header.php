@@ -10,13 +10,13 @@
 defined('_JEXEC') or die('Restricted access');
 
 if(version_compare(JVERSION,'1.6.0','ge')) {
-	jimport('joomla.form.formfield');
-	class JFormFieldHeader extends JFormField {
+    jimport('joomla.form.formfield');
+    class JFormFieldHeader extends JFormField {
 
-		var	$type = 'header';
+        var	$type = 'header';
 
-		function getInput(){
-			//return JElementHeader::fetchElement($this->name, $this->value, $this->element, $this->options['control']);
+        function getInput(){
+            //return JElementHeader::fetchElement($this->name, $this->value, $this->element, $this->options['control']);
             $value = $this->value;
             $document = & JFactory::getDocument();
             $document->addStyleDeclaration('
@@ -30,13 +30,13 @@ if(version_compare(JVERSION,'1.6.0','ge')) {
             } else {
                 return '<div class="SLHeaderContainer15"><div class="SLHeaderContent">'.JText::_($value).'</div><div class="SLHeaderClr"></div></div>';
             }
-		}
+        }
 
-		function getLabel(){
-			return '';
-		}
+        function getLabel(){
+            return '';
+        }
 
-	}
+    }
 }
 
 jimport('joomla.html.parameter.element');
