@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension  version="1.6" type="plugin" group="system" method="upgrade">
+  <name>System - StarLite Pretty Photo</name>
+  <author>StarLite</author>
+  <creationDate>Sepetember 24, 2012</creationDate>
+  <copyright>Copyright (C) 2012 www.starliteweb.com All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html</license>
+  <authorEmail>admin@starliteweb.com</authorEmail>
+  <version>1.2</version>
+  <authorUrl>www.starliteweb.com</authorUrl>
+  <description>PLG_SL_XML_DESC</description>
+  <files>
+    <filename plugin="slprettyphoto">slprettyphoto.php</filename>
+	<filename>index.html</filename>
+    <folder>slprettyphoto/</folder>
+  </files>
+   <languages>
+    <language tag="en-GB">en-GB.plg_system_slprettyphoto.ini</language>
+    <language tag="en-GB">en-GB.plg_system_slprettyphoto.sys.ini</language>
+  </languages>
+
+  <config>
+    <fields name="params" addfieldpath="/plugins/system/slprettyphoto/slprettyphoto/elements/">
+      <fieldset name="basic">
+	  <field name="" type="header" default="PLG_SL_COMMON_PARAMETERS" label="" description="" ></field>
+        <field name="theme" type="list" default="pp_default" label="PLG_SL_THEME_LABEL" description="PLG_SL_THEME_DESC">
+          <option value="pp_default">PLG_SL_THEME_OPTION_1</option>
+          <option value="facebook">PLG_SL_THEME_OPTION_2</option>
+          <option value="light_rounded">PLG_SL_THEME_OPTION_3</option>
+          <option value="dark_rounded">PLG_SL_THEME_OPTION_4</option>
+          <option value="light_square">PLG_SL_THEME_OPTION_5</option>
+          <option value="dark_square">PLG_SL_THEME_OPTION_6</option>
+        </field>
+        <field name="show_title" type="radio" default="1" label="PLG_SL_TITLE_LABEL" description="PLG_SL_TITLE_DESC">
+          <option value="1">YES</option>
+          <option value="0">NO</option>
+        </field>
+        <field name="opacity" type="text" default="0.80" label="PLG_SL_BACKGROUND_OPACITY_LABEL" description="PLG_SL_BACKGROUND_OPACITY_DESC"></field>
+        <field name="autoplay" type="radio" default="1" label="PLG_SL_AUTOPLAY_VIDEO_LABEL" description="PLG_SL_AUTOPLAY_VIDEO_DESC">
+          <option value="1">YES</option>
+          <option value="0">NO</option>
+        </field>
+	   <field name="" type="header" default="PLG_SL_SLIDESHOW_PARAMETERS" label="" description="" ></field>
+        <field name="slideshow" type="text" default="5000" label="PLG_SL_SLIDESHOW_INT_LABEL" description="PLG_SL_SLIDESHOW_INT_DESC"></field>
+        <field name="autoplay_slideshow" type="radio" default="0" label="PLG_SL_AUTOPLAY_SLIDESHOW_LABEL" description="PLG_SL_AUTOPLAY_SLIDESHOW_DESC">
+          <option value="1">YES</option>
+          <option value="0">NO</option>
+        </field>
+        <field name="counter_separator_label" type="text" default="/" label="PLG_SL_COUNTER_SEPARATOR_LABEL" description="PLG_SL_COUNTER_SEPARATOR_DESC"></field>
+        <field name="slideshow" type="text" default="5000" label="PLG_SL_SLIDESHOW_INT_LABEL" description="PLG_SL_SLIDESHOW_INT_DESC"></field>
+		<field name="" type="header" default="PLG_SL_SOCIAL_PARAMETERS" label="" description="" ></field>
+        <field name="social_tools" type="radio" default="1" label="PLG_SL_SOCIAL_TOOLS_LABEL" description="PLG_SL_SOCIAL_TOOLS_DESC">
+          <option value="1">YES</option>
+          <option value="0">NO</option>
+        </field>
+		<field name="" type="header" default="PLG_SL_JQUERY_PARAMETERS" label="" description="" ></field>
+		   <field name="include_jquery" type="radio" default="1" label="PLG_SL_INCLUDE_JQUERY_LABEL" description="PLG_SL_INCLUDE_JQUERY_DESC">
+      <option value="1">YES</option>
+      <option value="0">NO</option>
+    </field>
+    	<field name="jquery_conflict" type="radio" default="0" label="PLG_SL_JQUERY_NOCONFLICT_LABEL" description="PLG_SL_JQUERY_NOCONFLICT_DESC">
+      <option value="1">YES</option>
+      <option value="0">NO</option>
+    </field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>
