@@ -10,7 +10,7 @@ Master branch supports Joomla 2.5.x to 3.x versions.
 
 
 
-Contributing to StarLite Pretty Photo
+Contribution
 =====================
 
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
